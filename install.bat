@@ -90,5 +90,3 @@ goto End
 
 :End
 pause
-
-C:\Users\YUTHAR~1\AppData\Local\Temp\CP210x\
