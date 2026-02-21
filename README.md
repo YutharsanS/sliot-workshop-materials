@@ -120,6 +120,20 @@ void loop()
 ### LDR-Analog Input
 <img width="auto" height="auto" alt="68" src="https://github.com/user-attachments/assets/140a4b20-45aa-4c10-a127-c324b737cd9a" />
 
+```cpp
+int pin = 4;
+void setup() {
+  pinMode(pin,INPUT);
+  Serial.begin(115200);
+}
+
+void loop() {
+  int ldr_reading = analogRead(pin);
+  Serial.println(ldr_reading);
+  delay(1000);
+}
+```
+
 ### DHT11
 <img width="auto" height="auto" alt="71" src="https://github.com/user-attachments/assets/89628b8d-6adf-4d6b-b92c-d728b6f56fd2" />
 
