@@ -32,6 +32,20 @@ Images are adopted from this article : https://lastminuteengineers.com/esp32-pin
 ### Push Button - Active HIGH
 <img width="auto" height="auto" alt="64" src="https://github.com/user-attachments/assets/69fc17e8-9fd3-47de-bbdb-e2740fa4d464" />
 
+### Push Button - Active LOW
+<img width="auto" height="auto" alt="66" src="https://github.com/user-attachments/assets/b3a046d6-7105-4fd4-8768-af70cc077285" />
+
+### LDR-Analog Input
+<img width="auto" height="auto" alt="68" src="https://github.com/user-attachments/assets/140a4b20-45aa-4c10-a127-c324b737cd9a" />
+
+### DHT11
+<img width="auto" height="auto" alt="71" src="https://github.com/user-attachments/assets/89628b8d-6adf-4d6b-b92c-d728b6f56fd2" />
+
+### All together - Simple project
+<img width="auto" height="auto" alt="74" src="https://github.com/user-attachments/assets/18c7418e-f916-4229-8cee-2c1618f58696" />
+
+---
+
 ### Servo Motors
 
 Servo motor pinout <br/> 
