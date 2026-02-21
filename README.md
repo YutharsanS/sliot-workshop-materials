@@ -19,10 +19,18 @@ Images are adopted from this article : https://lastminuteengineers.com/esp32-pin
 ### Blink
 
 <img width="auto" height="auto" alt="52" src="https://github.com/user-attachments/assets/875c88b7-5d0d-4e2a-a953-ef9ce27b8acb" />
+
 ### LED Fade
 <img width="auto" height="auto" alt="55" src="https://github.com/user-attachments/assets/385a16df-d466-470a-b41a-9c6bc431714b" />
 
+### Buzzer
+<img width="auto" height="auto" alt="56" src="https://github.com/user-attachments/assets/462d4e90-9e02-4ab2-9dda-ab26b32f4e2b" />
 
+### Servo Motor
+<img width="auto" height="auto" alt="58" src="https://github.com/user-attachments/assets/c0cb9d13-4931-40de-abf7-b1f2344412ba" />
+
+### Push Button - Active HIGH
+<img width="auto" height="auto" alt="64" src="https://github.com/user-attachments/assets/69fc17e8-9fd3-47de-bbdb-e2740fa4d464" />
 
 ### Servo Motors
 
