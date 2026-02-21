@@ -16,6 +16,11 @@ Images are adopted from this article : https://lastminuteengineers.com/esp32-pin
 
 ## Demonstration Guides
 
+### Blink
+
+<img width="auto" height="auto" alt="52" src="https://github.com/user-attachments/assets/875c88b7-5d0d-4e2a-a953-ef9ce27b8acb" />
+
+
 ### Servo Motors
 
 Servo motor pinout <br/> 
