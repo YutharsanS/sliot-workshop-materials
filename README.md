@@ -176,6 +176,35 @@ void loop() {
 ### All together - Simple project
 <img width="auto" height="auto" alt="74" src="https://github.com/user-attachments/assets/18c7418e-f916-4229-8cee-2c1618f58696" />
 
+```cpp
+int ldrPin = 4;
+int buzzerPin = 5;
+
+// Threshold for detecting a shadow (you may need to adjust this)
+// ESP32 analog reads go from 0 to 4095
+int threshold = 1500; 
+
+void setup() {
+  pinMode(ldrPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  Serial.begin(115200);
+}
+
+void loop() {
+  int ldr_reading = analogRead(ldrPin);
+  Serial.print("LDR Reading: ");
+  Serial.println(ldr_reading);
+  
+  // If the reading drops below the threshold, a shadow is detected
+  if (ldr_reading < threshold) {
+    digitalWrite(buzzerPin, HIGH); // Turn the buzzer ON
+  } else {
+    digitalWrite(buzzerPin, LOW);  // Turn the buzzer OFF
+  }
+
+  delay(500); // Reduced delay for better responsiveness
+}
+```
 ---
 
 ### Servo Motors
