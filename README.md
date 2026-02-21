@@ -20,6 +20,19 @@ Images are adopted from this article : https://lastminuteengineers.com/esp32-pin
 
 <img width="auto" height="auto" alt="52" src="https://github.com/user-attachments/assets/875c88b7-5d0d-4e2a-a953-ef9ce27b8acb" />
 
+```cpp
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);                      // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(1000);                      // wait for a second
+}
+```
+
 ### LED Fade
 <img width="auto" height="auto" alt="55" src="https://github.com/user-attachments/assets/385a16df-d466-470a-b41a-9c6bc431714b" />
 
