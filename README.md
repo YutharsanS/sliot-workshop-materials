@@ -80,7 +80,8 @@ void loop() {
 ### Servo Motor
 <img width="auto" height="auto" alt="58" src="https://github.com/user-attachments/assets/c0cb9d13-4931-40de-abf7-b1f2344412ba" />
 
-```cpp/* ESP32 Servo Sweep */
+```cpp
+/* ESP32 Servo Sweep */
 #include <ESP32Servo.h>
 
 const int servoPin = 4; /* GPIO14 */
@@ -122,6 +123,42 @@ void loop()
 ### DHT11
 <img width="auto" height="auto" alt="71" src="https://github.com/user-attachments/assets/89628b8d-6adf-4d6b-b92c-d728b6f56fd2" />
 
+```cpp
+#include "DHT.h"
+#define DHTPIN 4 // Digital pin connected to the DHT sensor
+#define DHTTYPE DHT11 // DHT 11 (AM2302), AM2321
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("DHTxx test!");
+  dht.begin();
+}
+
+void loop() {
+  delay(2000);
+
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
+
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("% Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.println(f);
+}
+```
 ### All together - Simple project
 <img width="auto" height="auto" alt="74" src="https://github.com/user-attachments/assets/18c7418e-f916-4229-8cee-2c1618f58696" />
 
